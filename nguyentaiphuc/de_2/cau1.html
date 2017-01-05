@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#text1").css('color','red')
+    });
+    $("#btn1").click(function(){
+        $("#text2").css('color','red')
+    });
+
+
+	
+	
+});
+
+$("#fname").keydown(function(){
+        $("#fname").css("background-color", "yellow");
+        
+    });
+    $("#fname").keyup(function(){
+        $("#fname").css("background-color", "pink");
+        var ps = document.getElementsByClassName("info");
+    	for(var i = 0, len = ps.length; i < len; i++) {
+        	ps[i].innerHTML = $("#fname").val();
+    	}
+    });
+
+
+function myFunction() {
+
+      
+	var x = alert('CSS')
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+</head>
+<body>
+
+
+		Full Name: <input type="text" name="fname" id="fname">
+		<p class="info"></p>
+
+
+
+	<div name ="tutorial  php" id="text1">
+			<p>PHP</p>
+		</div>
+		<div name ="java">
+			<p>Java</p>
+		</div>
+		<div name ="python tutorial" id="text2">
+			<p>Python</p>
+		</div>
+	<button id="btn1"> click to see </button>
+		
+		
+		<hr>
+		<br>
+		
+		<ul>
+			<li>HTML</li>
+			<li id="demo">CSS</li>
+			<li>JS</li>
+		</ul>
+		<input type="button" id="showValue" value="click" onclick="myFunction()"/>
+
+		
+		
+		
+		
+</body>
+</html>
